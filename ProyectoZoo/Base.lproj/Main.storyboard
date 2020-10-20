@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoZoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2P6-wi-kod">
+                                <rect key="frame" x="0.0" y="1" width="414" height="895"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uiQ-S4-j5f">
+                                <rect key="frame" x="87" y="212" width="240" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ORN-da-kHN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf2-n3-5Zb">
+                                <rect key="frame" x="69" y="598" width="276" height="60"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="22"/>
+                                <state key="normal" title="Ingresar" backgroundImage="Image">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="foE-C2-vNd" kind="show" id="z2v-5b-k2U"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titulo" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-o7-Pow">
+                                <rect key="frame" x="87" y="358" width="240" height="53"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2P6-wi-kod" secondAttribute="bottom" id="2V3-Hv-7Pr"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kyl-AG-89h"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="top" secondItem="h6Q-o7-Pow" secondAttribute="bottom" constant="-410" id="LHt-ld-YrZ"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="1" id="QVp-n9-ERx"/>
+                            <constraint firstItem="h6Q-o7-Pow" firstAttribute="leading" secondItem="uiQ-S4-j5f" secondAttribute="leading" id="X9c-f4-sGp"/>
+                            <constraint firstItem="Lf2-n3-5Zb" firstAttribute="top" secondItem="h6Q-o7-Pow" secondAttribute="bottom" constant="187" id="ZSZ-OS-lfs"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="centerX" secondItem="uiQ-S4-j5f" secondAttribute="centerX" id="fdA-12-cZo"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hsu-pK-Nc0"/>
+                            <constraint firstItem="h6Q-o7-Pow" firstAttribute="trailing" secondItem="uiQ-S4-j5f" secondAttribute="trailing" id="sab-cZ-Kup"/>
+                            <constraint firstItem="2P6-wi-kod" firstAttribute="centerX" secondItem="Lf2-n3-5Zb" secondAttribute="centerX" id="uvf-oD-pnS"/>
+                            <constraint firstItem="h6Q-o7-Pow" firstAttribute="top" secondItem="uiQ-S4-j5f" secondAttribute="bottom" id="yDg-9g-723"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--Principal Controller-->
+        <scene sceneID="NoC-rE-AvI">
+            <objects>
+                <viewController id="foE-C2-vNd" customClass="principalController" customModule="ProyectoZoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="54g-Zh-BGU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Umn-jk-Jl0">
+                                <rect key="frame" x="0.0" y="1" width="414" height="894"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoologisch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yx-aZ-J1F">
+                                <rect key="frame" x="20" y="116" width="156" height="33"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mcx-uX-hcI">
+                                <rect key="frame" x="345" y="360" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="YIR-ZA-fMa"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marca a los animales que ya hayas visitado." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNl-XX-wHL">
+                                <rect key="frame" x="20" y="157" width="332" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="right" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-rn-ju5">
+                                <rect key="frame" x="345" y="249" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="bnV-jR-dCT"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="onTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLeon" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-Sy-LcN">
+                                <rect key="frame" x="20" y="227" width="277" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="eUD-dq-N9y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgLemur" translatesAutoresizingMaskIntoConstraints="NO" id="1xU-Gn-KJE">
+                                <rect key="frame" x="20" y="338" width="277" height="75"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60O-Wz-I7o">
+                                <rect key="frame" x="108" y="243" width="73" height="43"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                <state key="normal" title="León">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rYa-13-s0q" kind="show" id="fNU-h2-umx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gie-fC-wSa">
+                                <rect key="frame" x="108" y="354" width="82" height="43"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                <state key="normal" title="Lemur">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wa6-qx-uwr" kind="show" id="LHl-sa-2xl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pmb-Sy-LcN" firstAttribute="trailing" secondItem="1xU-Gn-KJE" secondAttribute="trailing" id="0Ce-JL-DEm"/>
+                            <constraint firstItem="pmb-Sy-LcN" firstAttribute="centerY" secondItem="hpc-rn-ju5" secondAttribute="centerY" id="2Rv-Hf-aGE"/>
+                            <constraint firstItem="Gie-fC-wSa" firstAttribute="centerY" secondItem="1xU-Gn-KJE" secondAttribute="centerY" id="5Lp-nR-OKY"/>
+                            <constraint firstItem="SNl-XX-wHL" firstAttribute="top" secondItem="7Yx-aZ-J1F" secondAttribute="bottom" constant="8" id="9mf-jq-n4s"/>
+                            <constraint firstItem="pmb-Sy-LcN" firstAttribute="leading" secondItem="6jX-Y6-dMb" secondAttribute="leading" constant="20" id="Ch7-Ro-Gs9"/>
+                            <constraint firstItem="Gie-fC-wSa" firstAttribute="top" secondItem="pmb-Sy-LcN" secondAttribute="bottom" constant="52" id="DIM-fZ-DJs"/>
+                            <constraint firstItem="7Yx-aZ-J1F" firstAttribute="top" secondItem="54g-Zh-BGU" secondAttribute="top" constant="116" id="FrB-k7-xRB"/>
+                            <constraint firstItem="hpc-rn-ju5" firstAttribute="leading" secondItem="pmb-Sy-LcN" secondAttribute="trailing" constant="48" id="G0W-lK-nZF"/>
+                            <constraint firstItem="hpc-rn-ju5" firstAttribute="trailing" secondItem="54g-Zh-BGU" secondAttribute="trailingMargin" id="IQB-oa-6Uv"/>
+                            <constraint firstItem="1xU-Gn-KJE" firstAttribute="leading" secondItem="6jX-Y6-dMb" secondAttribute="leading" constant="20" id="Kak-eb-79c"/>
+                            <constraint firstItem="60O-Wz-I7o" firstAttribute="centerX" secondItem="Gie-fC-wSa" secondAttribute="centerX" id="NOV-vy-MvA"/>
+                            <constraint firstItem="Mcx-uX-hcI" firstAttribute="top" secondItem="hpc-rn-ju5" secondAttribute="bottom" constant="80" id="Pf7-0x-cCh"/>
+                            <constraint firstItem="Mcx-uX-hcI" firstAttribute="leading" secondItem="hpc-rn-ju5" secondAttribute="leading" id="Tww-Id-z2a"/>
+                            <constraint firstItem="pmb-Sy-LcN" firstAttribute="centerY" secondItem="60O-Wz-I7o" secondAttribute="centerY" id="eGI-PS-wcF"/>
+                            <constraint firstItem="hpc-rn-ju5" firstAttribute="top" secondItem="SNl-XX-wHL" secondAttribute="bottom" constant="71" id="eg3-zh-PNj"/>
+                            <constraint firstItem="7Yx-aZ-J1F" firstAttribute="leading" secondItem="54g-Zh-BGU" secondAttribute="leadingMargin" id="iX6-B1-9Sk"/>
+                            <constraint firstItem="Gie-fC-wSa" firstAttribute="leading" secondItem="60O-Wz-I7o" secondAttribute="leading" id="pdv-bb-aDx"/>
+                            <constraint firstItem="SNl-XX-wHL" firstAttribute="leading" secondItem="7Yx-aZ-J1F" secondAttribute="leading" id="tJG-Wu-iE8"/>
+                            <constraint firstItem="1xU-Gn-KJE" firstAttribute="top" secondItem="pmb-Sy-LcN" secondAttribute="bottom" constant="36" id="xf5-RU-n7c"/>
+                            <constraint firstItem="Gie-fC-wSa" firstAttribute="leading" secondItem="6jX-Y6-dMb" secondAttribute="leading" constant="108" id="xrj-oZ-H4b"/>
+                            <constraint firstItem="Gie-fC-wSa" firstAttribute="centerY" secondItem="Mcx-uX-hcI" secondAttribute="centerY" id="yh6-4l-Vob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6jX-Y6-dMb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="063-eC-hs2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0P-63-O6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="138.61607142857142"/>
+        </scene>
+        <!--Lista Controller-->
+        <scene sceneID="vOh-WL-6pD">
+            <objects>
+                <viewController id="rYa-13-s0q" customClass="listaController" customModule="ProyectoZoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2dY-m7-jP8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="aJX-vU-s27">
+                                <rect key="frame" x="0.0" y="-52" width="414" height="894"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El león es un mamífero carnívoro de la familia de los félinos y una de las cinco especies del género Panthera." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycK-if-0g7">
+                                <rect key="frame" x="20" y="368" width="374" height="79"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Le¢n" translatesAutoresizingMaskIntoConstraints="NO" id="w58-4R-0La">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="Ip8-RE-PWo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEÓN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7K-n3-nsw">
+                                <rect key="frame" x="20" y="315" width="78" height="33"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vb-j5-MDr">
+                                <rect key="frame" x="20" y="20" width="57" height="29"/>
+                                <state key="normal" backgroundImage="HojitaFlechaBlanca"/>
+                                <connections>
+                                    <action selector="doAction:" destination="rYa-13-s0q" eventType="touchUpInside" id="39v-Id-w7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G7K-n3-nsw" firstAttribute="top" secondItem="w58-4R-0La" secondAttribute="bottom" constant="30" id="1FS-Tg-ifh"/>
+                            <constraint firstItem="G7K-n3-nsw" firstAttribute="leading" secondItem="loK-vu-3oa" secondAttribute="leading" constant="20" id="5ae-6A-SZt"/>
+                            <constraint firstItem="ycK-if-0g7" firstAttribute="top" secondItem="G7K-n3-nsw" secondAttribute="bottom" constant="20" id="ELQ-ty-gU7"/>
+                            <constraint firstItem="loK-vu-3oa" firstAttribute="trailing" secondItem="ycK-if-0g7" secondAttribute="trailing" constant="20" id="Ohb-Q7-g0k"/>
+                            <constraint firstItem="6Vb-j5-MDr" firstAttribute="top" secondItem="loK-vu-3oa" secondAttribute="top" constant="20" id="VY4-SQ-ukx"/>
+                            <constraint firstItem="w58-4R-0La" firstAttribute="leading" secondItem="loK-vu-3oa" secondAttribute="leading" id="YxE-pR-KSc"/>
+                            <constraint firstItem="w58-4R-0La" firstAttribute="trailing" secondItem="loK-vu-3oa" secondAttribute="trailing" id="cNY-bZ-45B"/>
+                            <constraint firstItem="w58-4R-0La" firstAttribute="top" secondItem="loK-vu-3oa" secondAttribute="top" id="cUs-a4-rHB"/>
+                            <constraint firstItem="6Vb-j5-MDr" firstAttribute="leading" secondItem="loK-vu-3oa" secondAttribute="leading" constant="20" id="d5d-uD-zhN"/>
+                            <constraint firstItem="ycK-if-0g7" firstAttribute="leading" secondItem="loK-vu-3oa" secondAttribute="leading" constant="20" id="gQp-jR-kKZ"/>
+                            <constraint firstItem="G7K-n3-nsw" firstAttribute="leading" secondItem="loK-vu-3oa" secondAttribute="leading" constant="20" id="zy0-4a-ywd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="loK-vu-3oa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y3N-4y-85Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktp-eV-4Jd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579" y="138"/>
+        </scene>
+        <!--Lista Controller-->
+        <scene sceneID="r8F-Na-5N8">
+            <objects>
+                <viewController id="wa6-qx-uwr" customClass="listaController" customModule="ProyectoZoo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Lx-qF-xiY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UvX-Qr-4YI">
+                                <rect key="frame" x="0.0" y="1" width="414" height="894"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K7-lV-gGv">
+                                <rect key="frame" x="20" y="368" width="374" height="210.5"/>
+                                <string key="text">Los lémures son unos primates estrepsirrinos endémicos de la isla de Madagascar. Reciben su nombre por los lemures, fantasmas o espíritus de la mitología romana, debido a las estrepitosas vocalizaciones que emiten, sus ojos brillantes y los hábitos nocturnos de algunas de sus especies.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEMUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-uJ-etF">
+                                <rect key="frame" x="20" y="315" width="101" height="33"/>
+                                <fontDescription key="fontDescription" name="Galvji-Bold" family="Galvji" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lemur" translatesAutoresizingMaskIntoConstraints="NO" id="Q15-nn-Vev">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="eV1-1z-dqu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="285" id="wJn-cu-PHu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wg-AF-bNX">
+                                <rect key="frame" x="20" y="20" width="57" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="HojitaFlechaBlanca"/>
+                                <connections>
+                                    <action selector="doAction2:" destination="wa6-qx-uwr" eventType="touchUpInside" id="byi-Fa-ASr"/>
+                                    <action selector="doAction:" destination="rYa-13-s0q" eventType="touchUpInside" id="pik-rD-VDI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1K7-lV-gGv" firstAttribute="leading" secondItem="08d-YP-xpi" secondAttribute="leading" constant="20" id="384-oq-gVs"/>
+                            <constraint firstItem="Q15-nn-Vev" firstAttribute="leading" secondItem="08d-YP-xpi" secondAttribute="leading" id="8s0-Vd-z4u"/>
+                            <constraint firstItem="Cum-uJ-etF" firstAttribute="top" secondItem="Q15-nn-Vev" secondAttribute="bottom" constant="30" id="Bcb-1w-W6Z"/>
+                            <constraint firstItem="Q15-nn-Vev" firstAttribute="trailing" secondItem="08d-YP-xpi" secondAttribute="trailing" id="NYO-3x-cWm"/>
+                            <constraint firstItem="1K7-lV-gGv" firstAttribute="top" secondItem="Cum-uJ-etF" secondAttribute="bottom" constant="20" id="PEC-gB-ZVz"/>
+                            <constraint firstItem="Q15-nn-Vev" firstAttribute="top" secondItem="4Lx-qF-xiY" secondAttribute="top" id="nUl-g0-VPZ"/>
+                            <constraint firstItem="08d-YP-xpi" firstAttribute="trailing" secondItem="1K7-lV-gGv" secondAttribute="trailing" constant="20" id="ncy-Ra-iO5"/>
+                            <constraint firstItem="Cum-uJ-etF" firstAttribute="leading" secondItem="08d-YP-xpi" secondAttribute="leading" constant="20" id="s07-uN-pf7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="08d-YP-xpi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qRu-tm-21S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix1-K4-jHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2314" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HojitaFlechaBlanca" width="56.5" height="28.5"/>
+        <image name="Image" width="276" height="60"/>
+        <image name="Le¢n" width="300" height="168"/>
+        <image name="bg" width="375" height="812"/>
+        <image name="imgLemur" width="330" height="91"/>
+        <image name="imgLeon" width="330" height="91"/>
+        <image name="lemur" width="321" height="157"/>
+        <image name="logo" width="150" height="146"/>
+        <image name="titulo" width="207" height="53"/>
+    </resources>
+</document>
